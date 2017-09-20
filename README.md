@@ -2,11 +2,11 @@
 
 Install dependencies
 
-`$ npm install`
+`$ yarn install`
 
 Then
 
-`$ npm start`
+`$ yarn start`
 
 Should open a page in browser at localhost:3000, open the developer tools in chrome, notice the Mobx multiple-instances warning.
 
