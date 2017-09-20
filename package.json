@@ -1,0 +1,17 @@
+{
+    "name": "markd",
+    "version": "2.0.0",
+    "private": true,
+    "scripts": {
+        "postinstall": "cd shared && yarn install && yarn build && cd ../client && yarn install",
+        "start": "concurrently -n \"shared,client\" \"cd shared && yarn start\" \"cd client && yarn start\"",
+        "build": "cd shared && yarn build && cd ../client && yarn build",
+        "clean-dist": "concurrently -n \"shared,client\" \"cd shared && yarn clean-dist\" \"cd client && yarn clean-dist\"",
+        "clean-node": "concurrently -n \"shared,client\" \"cd shared && yarn clean-node\" \"cd client && yarn clean-node\"",
+        "clean": "concurrently \"yarn clean-dist\" \"yarn clean-node\" && rimraf -f node_modules"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.1",
+        "concurrently": "^3.5.0"
+    }
+}

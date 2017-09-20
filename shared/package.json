@@ -1,0 +1,22 @@
+{
+    "name": "my-shared",
+    "version": "1.0.0",
+    "private": true,
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "clean-dist": "rimraf -f dist",
+        "clean-node": "rimraf -f node_modules",
+        "start": "tsc -w"
+    },
+    "dependencies": {
+        "@types/react": "^16.0.5",
+        "@types/react-dom": "^15.5.4",
+        "mobx": "^3.2.2",
+        "mobx-react": "^4.2.2",
+        "react": "^15.6.1",
+        "react-dom": "^15.6.1",
+        "typescript": "^2.5.2"
+    }
+}
