@@ -11,7 +11,8 @@
     "clean-node": "rimraf -f node_modules"
   },
   "dependencies": {
-    "my-shared": "file:../shared"
+    "my-shared": "file:../shared",
+    "rimraf": "^2.6.2"
   },
   "devDependencies": {
     "@types/node": "^8.0.28",

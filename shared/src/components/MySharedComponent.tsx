@@ -10,7 +10,7 @@ export interface MySharedComponentProps {
 export class MySharedComponent extends React.Component<MySharedComponentProps, any> {
     render() {
         return <div>
-            hello world!!!
+            hello world!
         </div>
     }
 }
