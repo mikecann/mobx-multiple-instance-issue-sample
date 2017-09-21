@@ -1,15 +1,7 @@
 # mobx-multiple-instance-issue-sample
 
-Install dependencies
+## Solution
 
-`$ yarn install`
+See `master` (https://github.com/mikecann/mobx-multiple-instance-issue-sample/tree/master) branch for the problem, this is the solution.
 
-Then
-
-`$ yarn start`
-
-Should open a page in browser at localhost:3000, open the developer tools in chrome, notice the Mobx multiple-instances warning.
-
-## Notes
-
-I noticed if I replace all the usages of `yarn` with `npm` then the problem doesnt show itself. Is this a yarn issue? It looks like yarn is running some post-install commands in `/client` that `npm` doesnt?
+Full credit goes to @mweststrate https://github.com/mobxjs/mobx/issues/1082#issuecomment-331074896
